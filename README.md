@@ -22,21 +22,31 @@
 - `pw {length}`
 - `pw {length} {complexity}`
 
-| Complexity     | Keyword  | Characters                      |
-| -------------- | ---------| ------------------------------- |
-| Harder         | `harder` | `a-zA-Z0-9,;.:-_+*#!()=?%&@$"'` |
-| Hard (Default) | `hard`   | `a-zA-Z0-9`                     |
-| Normal         | `normal` | `a-zA-Z`                        |
-| Easy           | `easy`   | `a-z`                           |
+Note: `{complexity}` can be typed using either the long or short numerical keyword form, see table below.
+
+| Complexity     | Long Keyword | Numerical Keyword | Characters                      |
+| -------------- | -------------| ----------------- | ------------------------------- |
+| Harder         | `harder`     | `3`               | `a-zA-Z0-9,;.:-_+*#!()=?%&@$"'` |
+| Hard (Default) | `hard`       | `2`               | `a-zA-Z0-9`                     |
+| Normal         | `normal`     | `1`               | `a-zA-Z`                        |
+| Easy           | `easy`       | `0`               | `a-z`                           |
 
 ## Changelog
+
+* 0.0.2
+	* Add short numerical complexity keywords for faster typing, e.g. `pw 12 3`
 
 * 0.0.1
 	* Initial version
 
 ## License
 
-Copyright (c) 2014 [Thomas Rasshofer](http://thomasrasshofer.com/)  
+Copyright (c) 2014 [Thomas Rasshofer](http://thomasrasshofer.com/)
 Licensed under the MIT license.
 
 See LICENSE for more info.
+
+## Contributors
+
+- [@rasshofer](https://github.com/rasshofer)
+- [@fza](https://github.com/fza)
