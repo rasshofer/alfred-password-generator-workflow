@@ -25,7 +25,7 @@
 Note: `{complexity}` can be typed using either the long or short numerical keyword form, see table below.
 
 | Complexity     | Long Keyword | Numerical Keyword | Characters                      |
-| -------------- | -------------| ----------------- | ------------------------------- |
+| -------------- | ------------ | ----------------- | ------------------------------- |
 | Harder         | `harder`     | `3`               | `a-zA-Z0-9,;.:-_+*#!()=?%&@$"'` |
 | Hard (Default) | `hard`       | `2`               | `a-zA-Z0-9`                     |
 | Normal         | `normal`     | `1`               | `a-zA-Z`                        |
@@ -41,7 +41,7 @@ Note: `{complexity}` can be typed using either the long or short numerical keywo
 
 ## License
 
-Copyright (c) 2014 [Thomas Rasshofer](http://thomasrasshofer.com/)
+Copyright (c) 2014 [Thomas Rasshofer](http://thomasrasshofer.com/)  
 Licensed under the MIT license.
 
 See LICENSE for more info.
