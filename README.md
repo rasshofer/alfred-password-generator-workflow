@@ -33,6 +33,9 @@ Note: `{complexity}` can be typed using either the long or short numerical keywo
 
 ## Changelog
 
+* 0.0.3
+	* Some fixes affecting short complexity keywords
+
 * 0.0.2
 	* Add short numerical complexity keywords for faster typing, e.g. `pw 12 3`
 
