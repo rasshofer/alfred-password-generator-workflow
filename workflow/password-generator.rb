@@ -1,8 +1,11 @@
 #!/usr/bin/env ruby
 
+# Input query
+query = ARGV[0].split(' ')
+
 # Setup vars
-length = (ARGV[0] || 12).to_i
-complexity_query = ARGV[1]
+length = (query[0] || 12).to_i
+complexity_query = query[1]
 password = ''
 complexity = :hard
 complexities = [:easy, :normal, :hard, :harder]
