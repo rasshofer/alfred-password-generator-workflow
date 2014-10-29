@@ -33,6 +33,9 @@ Note: `{complexity}` can be typed using either the long or short numerical keywo
 
 ## Changelog
 
+* 0.0.5
+	* Rename `Workflow` to `workflow` for the sake of case sensitivity
+
 * 0.0.4
 	* Move Ruby code to a separate file for the sake of versioning (#3)
 
