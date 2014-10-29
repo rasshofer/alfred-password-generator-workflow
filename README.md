@@ -33,6 +33,9 @@ Note: `{complexity}` can be typed using either the long or short numerical keywo
 
 ## Changelog
 
+* 0.0.4
+	* Move Ruby code to a separate file for the sake of versioning (#3)
+
 * 0.0.3
 	* Some fixes affecting short complexity keywords
 
