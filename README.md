@@ -26,12 +26,16 @@ Note: `{complexity}` can be typed using either the long or short numerical keywo
 
 | Complexity     | Long Keyword | Numerical Keyword | Characters                      |
 | -------------- | ------------ | ----------------- | ------------------------------- |
+| Safe           | `safe`       | `4`               | `a-zA-Z0-9-_` |
 | Harder         | `harder`     | `3`               | `a-zA-Z0-9,;.:-_+*#!()=?%&@$"'` |
 | Hard (Default) | `hard`       | `2`               | `a-zA-Z0-9`                     |
 | Normal         | `normal`     | `1`               | `a-zA-Z`                        |
 | Easy           | `easy`       | `0`               | `a-z`                           |
 
 ## Changelog
+
+* 0.0.6
+    * Add new `safe` keyword with a shell-safe character set.
 
 * 0.0.5
 	* Rename `Workflow` to `workflow` for the sake of case sensitivity

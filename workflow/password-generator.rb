@@ -8,19 +8,20 @@ length = (query[0] || 12).to_i
 complexity_query = query[1]
 password = ''
 complexity = :hard
-complexities = [:easy, :normal, :hard, :harder]
+complexities = [:easy, :normal, :hard, :harder, :safe]
 complexity_char_map = {
   :easy   => 'abcdefghijklmnopqrstuvwxyz',
   :normal => 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ',
   :hard   => 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789',
-  :harder => 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789,;.:-_+*#!()=?%&@$"\''
+  :harder => 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789,;.:-_+*#!()=?%&@$"\'',
+  :safe   => 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_',
 }
 
 if !complexity_query.nil?
   if complexity_query.length === 1
     # Short code ('0', '1', '2', etc.)
     complexity_query_i = complexity_query.to_i
-    if (0..3).include?(complexity_query_i)
+    if (0..4).include?(complexity_query_i)
       complexity = complexities[complexity_query_i]
     end
   else
